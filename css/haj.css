@@ -1,0 +1,798 @@
+/*
+File Name: haj.css
+Programmer: Brandon El Haj
+*/
+
+
+/*=== GLOBAL STYLE SECTION ===*/
+
+/* Global Body styling */ 
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	background: #FFF;
+	margin-top: 110px;
+}
+
+/* Global Main styling */ 
+main {
+	padding-top: 1.75em;
+	position: relative;
+}
+
+/* Global Image styling */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*=== NAVBAR SECTION ===*/
+
+/* Header styling and positioning */
+header {
+	background: #fff;
+	width: 100%;
+	height: 110px;
+	line-height: 1.25em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+/* Primary nav link styling */
+li a:link {
+	color: #002533;
+	text-decoration: none;
+}
+
+/* Visited nav link styling */
+li a:visited {
+	color: #002533;
+	text-decoration: none;
+}
+
+/* Hover nav link styling */
+li a:hover {
+	color: #f15c22;
+	text-decoration: none;
+	border-bottom: 1px solid #f15c22;
+}
+
+/* Positioning for the Nav links */
+nav {
+	width: 100%;
+	text-align: center;
+	padding: 20px;	
+}
+
+/* Nav link styling */
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	float: none;
+	padding: 10px;
+	font-size: 17px;	
+}
+
+/* Logo styling. Brandon logo is an SVG file. */
+#logo{
+	margin: 15px;
+	float: left;
+	height: 67.5px;
+	width: 75px;
+	background: url(/images/logo_b_square_small_final.svg) no-repeat center;
+	display: block;
+	position: absolute;
+}
+
+/* Mobile nav button styling. Hamburger icon, PNG file with 40px x 40px dimensions. */
+#hamburger-menu {
+	width: 40px;
+	height: 40px;
+	background: url(/images/hamburger_icon.svg) center;
+}
+
+/* Font size for primary navigation links. */
+.navigation {
+	font-size: 15px;
+}
+
+/* Styles the current page link to let user know which page he/she is on. */
+.active {
+	font-weight: bold;
+}
+
+/*=== INTRO SECTION ===*/
+
+/* Centers intro text content on homepage. */
+.center_text {
+	text-align: center;
+}
+
+/* Left-aligns intro text on the homepage. */
+.left_text {
+	display: inline-block;
+	text-align: left;
+	font-size: 53px;
+	color: #002533;
+	line-height: 65px;
+}
+
+/* Formats ocean photo on homepage*/ 
+.ocean {
+	padding: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-top: 25px;
+}
+
+.orange_type {
+	color: #f15c22;
+	font-size: 20px;
+}
+
+/* Centers call to action buttons */
+#container {
+	text-align: center;
+}
+
+/* Work Button. PNG file with 200px x 71px dimensions. */
+#designs-button {
+	background-image: url(/images/work.png);
+}
+
+#designs-button:hover {
+	background-image: url(/images/work_hover.png);
+}
+
+/* Contact Button. PNG file with 200px x 71px dimensions. */
+#contact-button {
+	background-image: url(/images/contact.png);
+}
+
+#contact-button:hover {
+	background-image: url(/images/contact_hover.png);
+}
+
+/* Call to action button styling */
+#designs-button, #contact-button {
+	width: 115px;
+	height: 41px;
+	display: inline-block;
+	margin-bottom: 60px;
+}
+
+/* Adds space between call to action buttons. */
+.divider {
+	width: 30px;
+	height: auto;
+	display: inline-block;
+}
+
+/*=== SERVICES SECTION ===*/
+
+/* My Philosophy h1 styling */
+.about_title {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	padding: .2em;
+}
+
+/* My Philosophy paragraph styling */
+.about_para {
+	max-width: 45em;
+	margin: 0 auto;
+	padding: 0 1em;
+	line-height: 25px;
+	margin-bottom: 3em;
+}
+
+/* Positions Brandon photo */
+.brandon {
+	padding-top: .8em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 3em;
+}
+
+/* Clear it class */
+.clear {
+	clear: both;
+}
+
+/* Services heading style */
+.serv_heading {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: .1em;
+}
+
+/* Styles the lines above and below the section headings. */
+.heading {
+	display: block;
+	margin: 1em auto;
+	border-width: 3px;
+	width: 12em;
+	border-color: #f15c22;
+	height: 3px;
+	border-right: none;
+	border-left: none;
+}
+
+.philo_heading {
+	display: block;
+	margin: 1em auto;
+	border-width: 3px;
+	width: 21em;
+	border-color: #f15c22;
+	height: 3px;
+	border-right: none;
+	border-left: none;
+}
+
+/* Positions the services graphics */
+.services {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 7em;
+	margin-top: 3em;
+}
+
+/*=== WORK SECTION ===*/
+
+#fender_work {
+	display: none;
+}
+
+/* Removes the blue outline box when you select the image link. */
+.outline {
+	outline: none;
+}
+
+/* Positions the top row of the designs thumbnails. */
+.thumbs_top {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4em;
+}
+
+/* Positions the bottom row of the designs thumbnails. */
+.thumbs_bottom {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 6em;
+}
+
+/*=== WORK SAMPLES SECTION ===*/
+
+#container, #fender, #burrito, #timbers_work {
+	margin: 0 auto;
+}
+
+/* Back button styling for work samples pages. Back button, PNG file with 200px x 71px dimensions. */
+#back-button {
+	background-image: url(/images/back.png) ;
+	margin-top: 30px;
+	width: 115px;
+	height: 41px;
+	display: block;
+}
+
+#back-button:hover {
+	background-image: url(/images/back_hover.png);
+}
+
+/* Centers the back button */
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Heading style for the work sample */
+.sample_heading {
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 3.8em;
+	padding-bottom: 10px;
+}
+
+/* Paragraph section for the work sample */
+.sample_para {
+	margin-left: 10.1em;
+	line-height: 20px;
+}
+
+/* Styles specs heading */
+.small_head {
+	margin-left: 7.6em;
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* Makes the specs ul vertical and positions it. */
+.specs {
+	font-size: 15px;
+	display: block;
+	float: none;
+	list-style: none;
+	margin-left: 9.4em;
+}
+/*=== CONTACT SECTION ===*/
+
+/* Pushes footer down on Contact page for desktop version */
+ .space {
+	padding-bottom: 6em;
+}
+
+/* Form styling */
+form {
+	font-size: 16px;
+	margin-left: 6.2em;
+}
+
+/* Contact header styling */
+.contact_heading {
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 2em;
+	padding: 20px;
+}
+
+/* Contact paragraph styling */
+.contact_para {
+	margin-left: 6.6em;
+	line-height: 25px;
+	padding-bottom: 20px;
+}
+
+/* Name input field styling */
+.name {
+	margin-bottom: 1em;
+	padding: 7px;
+	border: solid 1px #002533;
+}
+
+/* Email input field styling */
+.email {
+	margin-bottom: 1em;
+	padding: 7px;
+	border: solid 1px #002533;
+}
+
+/* Changes the awful yellow autofill input bg color for chrome */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+/* Message box styling */
+textarea#message {
+	width: 400px;
+	height: 200px;
+	margin-bottom: 2em;
+	border: solid 1px #002533;
+}
+
+/* Creates space between the title of the input field and the box. */
+label {
+    display: block;
+	line-height: 0;
+	padding: 2.5px;
+}
+
+/* Address styling */
+address {
+	line-height: 20px;
+	font-size: 16px;
+	display: block;
+	margin-left: 6.2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+/* Button styling */
+button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 22px;
+  line-height: 1.8;
+  box-shadow: none;
+  border-radius: 0;
+  outline: none;	
+}
+
+/* Button border styling */ 
+section.border button {
+	color: #002533;
+	background: #fff;
+	border: solid 3px #002533; 
+	margin-bottom: 1em;
+}
+
+/* Turns button teal when hovered over */
+section.border button:hover,
+section.border {
+  border-color: #f15c22;
+  color: #f15c22;
+}
+
+/* Styles success messsage for the contact form */
+div.alert.alert-success {
+	font-weight: bold;
+	background-color: #fff;
+	padding-left: 0;
+	color: #000;
+	border-color: #fff;
+	margin-bottom: 0;
+}
+
+/* Phone number styling */
+.phone {
+	font-size: 16px;
+	margin-left: 6.2em;
+	color: #000;
+}
+
+/* Changes the form fields border color when selected. */
+input:focus, textarea:focus {
+border: 1px solid #f15c22 !important;
+-webkit-appearance: none;		
+box-shadow: 0 0 3px #f15c22 !important;
+-moz-box-shadow: 0 0 3px #f15c22 !important;
+-webkit-box-shadow: 0 0 3px #f15c22 !important;
+}
+
+/* Changes the form fields border color when selected. */
+input:focus, textarea:focus, select:focus {
+outline-offset: 0px !important;
+outline: none !important;
+}
+
+
+/*=== FOOTER SECTION ===*/
+
+/* Footer stylings */
+footer {
+	margin-top: 3em;
+	text-align: center;
+	height: 120px;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #f15c22;
+	margin: 1em auto;
+	padding: 0;
+	width: 6em;
+}
+
+/* Styles the copyright at the bottom of the page. */
+.copyright {
+	font-size: 12px;
+	padding: 12px;
+	color: #000;
+}
+
+#facebook {
+	display: inline-block;
+	width: 40px;
+	height: 45px;
+	margin-top: 30px;
+}
+
+#linkedin {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	margin-top: 30px;
+}
+
+/*=== MOBILE MEDIA QUERY ===*/
+
+@media only screen and (max-width : 640px) {
+
+/*=== NAVBAR SECTION ===*/	
+	
+	/* Header positioning for mobile */
+	header {
+		position: absolute;
+	}
+	
+	/* Displays mobile nav button */
+	#hamburger-menu {
+		display:inline-block;
+	}
+	
+	nav {
+		text-align: right;
+	}
+
+	/* Mobile nav styling */
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 3px solid #000;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+	}
+	
+	/* Positions primary nav links for mobile */
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+	
+	/* Makes mobile nav links vertical */
+	nav:hover ul {
+		display: block;
+	}
+	
+/*=== INTRO SECTION ===*/
+	
+	/* Narrows the gap between the header and main section. */ 
+	main {
+	padding-top: 1em;
+	}
+	
+	/* Styles the intro text for mobile */
+	.left_text {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	
+	/* Styles the ocean picture on the homepage for mobile. */
+	.ocean {
+		height: 200px;
+		padding: 15px;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	
+	/* Gets rid of the space between the designs and contact buttons. */
+	.divider {
+		width: 20px;
+	}
+	
+	/* Adjusts the gap for the designs and contact buttons. */
+	#designs-button, #contact-button {
+		margin-top: 35px;
+		margin-bottom: 45px;
+	}
+	
+	/* Pushes down the footer for mobile */
+	footer {
+		margin-top: 1em;
+	}
+	
+	/* Gives the copyright more space */
+	.copyright {
+		padding: 5px;
+	}
+
+/*=== SERVICES SECTION ===*/
+	
+	/* My Philosophy Heading alignment and positioning */
+	.about_title {
+		text-align: center;
+		padding-left: 14px;
+	}
+	
+	/* Services heading styling */
+	.serv_heading {
+		font-size: 40px;
+		margin-top: 0;
+	}
+	
+	/* Adjusts the gap between the services graphics and the footer */
+	.services {
+		margin-bottom: 2em;
+	}
+	
+	/* Adjusts the gap for the last two services in the mobile version */
+	.footy {
+		padding-bottom: 2em;
+	}
+
+/*=== WORK SECTION ===*/
+	
+	/* Adjusts the gap between the bottom thumbnails and the footer. */
+	.thumbs_bottom {
+		padding-bottom: 0;
+	}
+	
+	/* Evens out the space between the first and second work image in mobile view. */ 
+	.pad_bottom {
+		padding-bottom: 2em;
+	}
+	
+	/* Pushes down the footer on the designs page */
+	.foot {
+		padding-bottom: 8em;
+	}
+
+/*=== WORK SAMPLES SECTION ===*/
+	
+	/* Styles the work sample heading */
+	.sample_heading {
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: .4em;
+	padding-bottom: 10px;
+	margin-right: .4em;	
+	}
+	
+	/* Takes away the line breaks for paragraphs in mobile setting */
+	.breaks {
+		display: none;
+	}
+	
+	/* Styles the work sample description paragraph */
+	.sample_para {
+		margin-left: .7em;
+		line-height: 20px;
+		margin-right: .7em;
+	}
+	
+	/* Smaller specs header styling */
+	.small_head {
+		margin-left: .5em;
+		font-weight: bold;
+		font-size: 20px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	
+	/* Makes the specs ul vertical and positions it */
+	.specs {
+		display: block;
+		float: none;
+		list-style: none;
+		margin-left: 0;
+	}
+
+/*=== CONTACT SECTION ===*/	
+	
+	/* Takes away space between bottom of the contact form and the footer for tablet version */
+	.space {
+	padding-bottom: 0;
+	}
+	
+	/* Gives some space on the left side to the contact section title */
+	.contact_heading {
+		margin-left: 0;
+	}
+	
+	/* Gives some space on the left side to the paragraphs */
+	.contact_para {
+		margin-left: 1.2em;
+	}
+	
+	/* Gives some space on the left side to the contact form */
+	form {
+		margin-left: 1.2em;
+	}
+	
+	/* Gives some space on the left side to the address */
+	address {
+		margin-left: 1.2em;
+	}
+	
+	/* Gives some space on the left side to the phone number */
+	.phone {
+		margin-left: 1.2em;
+	}
+	
+	/* Styles the message box on the contact form */
+	textarea#message {
+		width: auto;
+		min-width: 300px
+	}
+}
+
+/*=== TABLET MEDIA QUERY ===*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+/*=== GLOBAL SECTION ===*/	
+	
+	main {
+		padding-top: 1.5em;
+	}
+	
+/*=== INTRO SECTION ===*/
+	
+	/* Adjusts the size of the intro text and add spacing */
+	.left_text {
+		font-size: 45px;
+		line-height: 60px;
+	}
+	
+	.ocean {
+		padding: 0 30px 30px 30px;
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	
+	#designs-button, #contact-button {
+		margin-bottom: 50px;
+	}
+	
+		.orange_type {
+		font-size: 18px;
+	}
+
+/*=== SERVICES SECTION ===*/
+	
+	/* Creates gaps between services graphics for tablet version */
+	.services {
+		margin-bottom: 2em;
+	}
+	
+	/* Pushes down the footer on the services page */
+	.footy {
+		padding-bottom: 2em;
+	}
+	
+/*=== WORK SECTION ===*/
+	
+	/* Evens out the space between the first and second work image in mobile view. */ 
+	.pad_bottom {
+		padding-bottom: 2em;
+	}
+	
+	/* Adjusts the gap between the bottom thumbnails and the footer */
+	.thumbs_bottom {
+		padding-bottom: 0;
+	}
+	
+	/* Pushes down the footer on the designs page */
+	.foot {
+		padding-bottom: 10em;
+	}
+	
+/*=== WORK SAMPLES SECTION ===*/
+	
+	/* All these classes line up the Work samples writing section for left alignment */
+	.sample_heading {
+		margin-left: 2em;
+	}
+
+	.sample_para {
+		margin-left: 5.3em;
+	}
+
+	.small_head {
+		margin-left: 4em;
+	}
+	.specs {
+		margin-left: 4.6em;
+	}
+	
+	/*=== CONTACT SECTION ===*/	
+	
+	/* Takes away space between bottom of the contact form and the footer for tablet version */
+	.space {
+	padding-bottom: 0;
+	}
+}
